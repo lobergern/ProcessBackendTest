@@ -246,7 +246,7 @@ public class UserTest extends FixtureTest {
         assertTrue(patch.containsKey("avatar"));
         assertTrue(patch.containsKey("ssn"));
         assertTrue(patch.containsKey("profilePhoto"));
-        assertFalse(patch.containsKey("extras"));
+        assertTrue(patch.containsKey("extras"));
 
         // Run a patch when both objects are the same. The ArrayList should be
         // empty and the objects remain equal.
