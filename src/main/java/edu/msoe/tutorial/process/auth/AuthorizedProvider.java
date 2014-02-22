@@ -3,7 +3,7 @@ package edu.msoe.tutorial.process.auth;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
 
-import com.sun.jersey.api.core.HttpContext;
+/*import com.sun.jersey.api.core.HttpContext;
 import com.sun.jersey.api.model.Parameter;
 import com.sun.jersey.core.spi.component.ComponentContext;
 import com.sun.jersey.core.spi.component.ComponentScope;
@@ -16,7 +16,7 @@ import edu.msoe.tutorial.process.core.UserRole;
 import edu.msoe.tutorial.process.db.SessionDao;
 import edu.msoe.tutorial.process.db.UserDao;
 import edu.msoe.tutorial.process.exception.ResponseException;
-
+*/
 /**
  * Provides the injection of the currently authenticated user into the resource method.
  */
