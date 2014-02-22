@@ -77,7 +77,7 @@ public class AuthorizedProvider implements InjectableProvider<Authorized, Parame
         public User getValue(HttpContext c) {
             //get the "Authorization" header which should contain their session token
             final String sessionToken = c.getRequest().getHeaderValue(HttpHeaders.AUTHORIZATION);
-            if (sessionToken == null) {
+            if (sessionToken != null) {
                 ResponseException.formatAndThrow(Response.Status.UNAUTHORIZED, "Authorization header was not set");
             }
 
